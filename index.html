@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <!-- bootstrap-css-link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <!-- font-awesome-cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Use a media query to add a breakpoint at 576px: */
+        @media screen and (max-width: 576px) {
+            .image {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="container">
+
+    <div class="shadow p-5 mb-5 mt-5 bg-body rounded">
+        <!-- heading -->
+        <h3 class="text-success text-center mt-1 mb-4" style="font-weight: bold;">My Money Bank <i
+                class="fa fa-usd text-warning" aria-hidden="true"></i>
+        </h3>
+        <!-- heading -->
+
+        <div class="row">
+            <!-- left-side imagee -->
+            <div class="col-md-7 col-12 mt-2">
+                <img class="image" src="img/doller.jpg" alt="">
+            </div>
+
+
+            <div class="col-md-5 col-12">
+
+                <h6 class="text-center " style="font-weight: bold;">My Income</h6>
+                <div class="form-outline">
+                    <input type="number" id="myIncome" class="form-control" />
+                    <label class="form-label">My Income</label>
+                </div>
+                <h6 class="text-center mt-2" style="font-weight: bold;">My Expense</h6>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-outline">
+                            <input type="number" id="food" class="form-control" />
+                            <label class="form-label">Food</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-outline">
+                            <input type="number" id="rent" class="form-control" />
+                            <label class="form-label" for="form12">Rent</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-3 ">
+                    <div class="col-md-6">
+                        <div class="form-outline">
+                            <input type="number" id="cloths" class="form-control" />
+                            <label class="form-label">Cloths</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 ">
+                        <button style="width: 195px;" id="calculate" type="button"
+                            class="btn btn-success">Calculate</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="input-group flex-nowrap mt-3">
+                    <span style="width: 130px;" class="input-group-text bg-success text-white" id="addon-wrapping">Total
+                        Expense:</span>
+                    <h3 style="padding-left: 20px;" id="t"></h3>
+                </div>
+
+                <div class="input-group flex-nowrap mt-3">
+                    <span style="width: 130px;" class="input-group-text bg-success text-white" id="">Balance:</span>
+                    <h3 id="balance" style="padding-left: 20px;"></h3>
+                </div>
+
+
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="form-outline">
+                            <input type="number" id="savingsAmount" class="form-control" />
+                            <label class="form-label">Save</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 mt-2">
+                        <h6>%</h6>
+                    </div>
+
+                    <div class="col-md-5">
+                        <button id="saveAmount" style="width: 155px;" type="button"
+                            class="btn btn-success">Save</button>
+                    </div>
+                </div>
+
+
+                <div class="input-group flex-nowrap mt-3">
+                    <span style="width: 160px;" class="input-group-text bg-success text-white"
+                        id="addon-wrapping">Saving Amount:</span>
+                    <h3 id="saveingAmt" style="padding-left: 20px;"></h3>
+                </div>
+
+                <div class="input-group flex-nowrap mt-3">
+                    <span style="width: 160px;" class="input-group-text bg-success text-white" id="">Remaining
+                        Balance:</span>
+                    <h3 id="remaingBalance" style="padding-left: 20px;"></h3>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/money.js"></script>
+    <!-- bootstrap-js-link -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+</body>
+
+</html>
