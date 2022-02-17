@@ -1,12 +1,3 @@
-var income = document.getElementById("myIncome").value;
-var food = document.getElementById("food").value;
-var rent = document.getElementById("rent").value;
-var cloths = document.getElementById("cloths").value;
-
-let sum = parseFloat(food) + parseFloat(rent) + parseFloat(cloths);
-
-
-console.log(sum);
 
 //Expense and balance calculation=================================
 document.getElementById("calculate").addEventListener("click", function () {
@@ -15,7 +6,7 @@ document.getElementById("calculate").addEventListener("click", function () {
     let rent = document.getElementById("rent").value;
     let cloths = document.getElementById("cloths").value;
 
-    let sum = parseFloat(food) + parseFloat(rent) + parseFloat(cloths);
+    let sum = parseInt(food) + parseInt(rent) + parseInt(cloths);
     const total = document.getElementById("t");
     total.innerText = sum;
 
