@@ -45,7 +45,7 @@
 
                 <h6 class="text-center " style="font-weight: bold;">My Income</h6>
                 <div class="form-outline">
-                    <input type="number" id="myIncome" class="form-control" />
+                    <input type="number" id="myIncome" class="form-control" required />
                     <label class="form-label">My Income</label>
                 </div>
                 <h6 class="text-center mt-2" style="font-weight: bold;">My Expense</h6>
@@ -53,13 +53,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-outline">
-                            <input type="number" id="food" class="form-control" />
+                            <input type="number" id="food" class="form-control" required />
                             <label class="form-label">Food</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-outline">
-                            <input type="number" id="rent" class="form-control" />
+                            <input type="number" id="rent" class="form-control" required />
                             <label class="form-label" for="form12">Rent</label>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                 <div class="row mt-3 ">
                     <div class="col-md-6">
                         <div class="form-outline">
-                            <input type="number" id="cloths" class="form-control" />
+                            <input type="number" id="cloths" class="form-control" required />
                             <label class="form-label">Cloths</label>
                         </div>
                     </div>
@@ -81,26 +81,28 @@
 
 
 
+                <div class="row">
 
+                    <div class=" input-group  mt-3">
+                        <span style="width: 130px;" class="input-group-text bg-success text-white"
+                            id="addon-wrapping">Total
+                            Expense:</span>
+                        <h3 style="padding-left: 20px;" id="totalExpense"></h3>
+                    </div>
 
-
-                <div class="input-group flex-nowrap mt-3">
-                    <span style="width: 130px;" class="input-group-text bg-success text-white" id="addon-wrapping">Total
-                        Expense:</span>
-                    <h3 style="padding-left: 20px;" id="t"></h3>
+                    <div class=" input-group  mt-3">
+                        <span style="width: 130px;" class="input-group-text bg-success text-white" id="">Balance:</span>
+                        <h3 id="balance" style="padding-left: 20px;"></h3>
+                    </div>
                 </div>
 
-                <div class="input-group flex-nowrap mt-3">
-                    <span style="width: 130px;" class="input-group-text bg-success text-white" id="">Balance:</span>
-                    <h3 id="balance" style="padding-left: 20px;"></h3>
-                </div>
 
 
 
                 <div class="row mt-3">
                     <div class="col-md-6">
                         <div class="form-outline">
-                            <input type="number" id="savingsAmount" class="form-control" />
+                            <input type="number" id="savingsAmount" class="form-control" required />
                             <label class="form-label">Save</label>
                         </div>
                     </div>
